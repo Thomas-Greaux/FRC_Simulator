@@ -15,6 +15,6 @@ public enum Symbols {
         for(Symbols s : Symbols.values()) {
             if(s.getSymbol().equals(c)) return s;
         }
-        return null; //TODO: pas bien !
+        return null;
     }
 }

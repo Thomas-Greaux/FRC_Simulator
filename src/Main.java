@@ -6,14 +6,16 @@ public class Main {
         Reader reader = new Reader(IN_FILE);
         String line;
         line = reader.readLine();
-        while(line != null) {
-            if (Parser.parse(line)) {
+        while (line != null) {
+            try {
+                Parser.parse(line);
                 System.out.println(line);
                 line = reader.readLine();
-            } else {
-                System.out.println("Syntax error : " + line);
+            } catch (InvalidCharacter invalidCharacter) {
+                invalidCharacter.printStackTrace();
                 return;
             }
+
         }
     }
 }
