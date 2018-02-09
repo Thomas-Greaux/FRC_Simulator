@@ -1,3 +1,5 @@
+package Instructions;
+
 public enum Symbols {
     ZERO("Z"), IDENTITY("I"), SUCCESSOR("S"), LEFT("<"), RIGHT(">"), COMPOSITE("o"), RECURSIVE("R");
 
